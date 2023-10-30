@@ -1,0 +1,28 @@
+@import "../variables.scss";
+
+.row-container{
+    position: relative;
+    display:flex;
+    flex-direction:column;
+    width:max-content;
+    .row-bottom-border{
+        position:absolute;
+        
+        bottom:0;
+        width:$box_width;
+        height:$border_width;
+        background-color:$border_background;
+        cursor: crosshair;
+    }
+    .row-db-corner{
+        position:absolute;
+        bottom:0;
+        width:$corner_diameter;
+        height:$corner_diameter;
+        border-radius:50%;
+        background-color:$corner_background;
+        &:hover{
+            cursor:pointer;
+        }
+    }
+}

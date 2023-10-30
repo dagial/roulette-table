@@ -1,0 +1,79 @@
+@import "../variables.scss";
+
+.bottom-line-container{
+    width:max-content;
+    display:flex;
+    flex-direction: column;
+    .bottom-line-first-row{
+        box-sizing: border-box;
+        display:flex;
+        width:max-content;
+        border-bottom:$border_width solid $border_background;
+        border-left:$border_width solid $border_background;
+        .bottom-line-item{
+            box-sizing:border-box;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:calc($box_width*4);
+            height:$box_height;
+            border-right:$border_width solid $border_background;
+            .bottom-line-content{
+                box-sizing: border-box;
+                border:3px solid $border_background;
+                background-color:inherit;
+                color:white;
+                font-weight:600;
+                padding:5px 10px;
+                border-radius:15px;
+            }
+            
+        }
+    }
+    .bottom-line-second-row{
+        box-sizing:border-box;
+        display:flex;
+        width:max-content;
+        border-bottom:$border_width solid $border_background;
+        border-left:$border_width solid $border_background;
+    
+        border-bottom-left-radius:15px;
+        border-bottom-right-radius:15px;
+        .second-row-item{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            box-sizing:border-box;
+            width:calc($box_width*2);
+            height:$box_height;
+            border-right:$border_width solid $border_background;
+            &:last-child{
+                border-bottom-right-radius:10px;
+                
+            }
+            .second-row-content{
+                border:2px solid $border_background;
+                color:white;
+                background-color: inherit;
+                font-weight: 600;
+                border-radius:15px;
+                padding:5px 10px;
+            }
+            .second-row-shape{
+                box-sizing: border-box;
+                border:2px solid white;
+                width:50px;
+                height: 50px;
+                transform: rotateX(45deg) rotateZ(45deg);
+                
+                
+            }
+            .red {
+                background:rgb(216, 18, 18);
+            }
+            .black{
+                background:black
+            }
+        }
+    }
+}

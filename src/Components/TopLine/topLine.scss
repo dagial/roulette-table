@@ -1,0 +1,121 @@
+@import "../variables.scss";
+
+.top-line-container{
+    box-sizing:border-box;
+    height:calc($box_height*3);
+    border-bottom:$border_width solid $border_background;
+    border-right:$border_width solid $border_background;
+    .top-line-bottom-corner{
+        width:$corner_diameter;
+        height: $corner_diameter;
+        border-radius:50%;
+        background-color: $corner_background;
+        z-index:100;
+        transform:translate(-25%,-105%);
+        cursor:pointer
+    }
+    .top-line-intersection{
+        display:flex;
+        .top-line-border{
+            height:5px;
+            width:calc($box_width*1.2);
+            background-color: $border_background;
+            cursor:crosshair;
+        }
+        .top-line-corner{
+            position:absolute;
+            width:$corner_diameter;
+            height:calc($corner_diameter + 2px);
+            border-radius: 50%;
+            background-color: $corner_background;
+            transform: translate(-20%,-20%);
+            z-index:100;
+            &:hover{
+                cursor:pointer;
+            }
+        }
+    }
+    
+    .top-line-box{
+        position:relative;
+        box-sizing:border-box;
+        width:calc($box_width*1.2);
+        height: calc($box_height*1.5 - 2px);
+        // border-right:2px solid white;
+        // &:last-of-type{
+        //     
+        // }
+        // clip-path: polygon(0% 0%, 70% 0%, 100% 50%, 70% 100%,0% 100%);
+        .content{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            font-size:1.2rem;
+            top:50%;
+            left:50%;
+            width:60px;
+            height:30px;
+            border-radius:50%;
+            background-color:rgb(0, 255, 0);
+            color:white;
+            border:1px solid rgb(0, 255, 0);
+            font-weight:500;
+            transform-origin:center;
+            transform:translate(-50%,-50%);
+            cursor:pointer
+        }
+        .corner-container{
+            background-color: $corner_background;
+            width:5px;
+            height:5px;
+            .top-line-corner{
+                width:6px;
+                height:6px;
+                border-radius: 50%;
+                background-color: $corner_background;
+                z-index:100;
+                transform:translate(-10%,20%);
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+        .corner-container1{
+            background-color: $corner_background;
+            width:5px;
+            height:5px;
+            .top-line-corner{
+                width:6px;
+                height:6px;
+                border-radius: 50%;
+                background-color: $corner_background;
+                z-index:100;
+                transform:translate(-10%,-20%);
+                &:hover{
+                    cursor:pointer;
+                }
+            }
+        }
+        .first-line{
+            height:$box_height;
+            width:$border_width;
+            background-color: $border_background;
+            cursor:crosshair;
+        }
+        // .top-line-corner{
+        //     width:$corner_diameter;
+        //     height:$corner_diameter;
+        //     border-radius: 50%;
+        //     background-color: $corner_background;
+        //     transform:translate(-30%,0);
+        // }
+        .second-line{
+            height:calc($box_height*0.4);
+            width:$border_width;
+            background-color:$border_background;
+            cursor:crosshair;
+            
+        }
+    }
+}

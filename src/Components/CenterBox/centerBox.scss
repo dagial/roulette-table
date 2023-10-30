@@ -1,0 +1,78 @@
+@import "../variables.scss";
+.center-box-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    position:relative;
+    width:$box_width;
+    height:$box_height;
+
+    .top-border{
+        position:absolute;
+        width:$box_width;
+        top:0;
+        left:0;
+        height:$border_width;
+        background-color: $border_background;
+        cursor:crosshair;
+    }
+    .bottom-border{
+        position:absolute;
+        width:$box_width;
+        bottom:0;
+        height:$border_width;
+        background-color:$border_background;
+        cursor:crosshair;
+    }
+    .left-border{
+        position:absolute;
+        height:$box_height;
+        width:$border_width;
+        left:0;
+        background-color:$border_background;
+        cursor:crosshair;
+    }
+   .b-l-corner{
+    width:$corner_diameter;
+    height: $corner_diameter;
+    border-radius:50%;
+    background-color:$corner_background;
+    position:absolute;
+    top:98%;
+    left:0;
+    z-index:100;
+    transform: $translate;
+    cursor:pointer;
+
+   }
+ 
+   .t-l-corner{
+    width:$corner_diameter;
+    height: $corner_diameter;
+    border-radius:50%;
+    background-color:$corner_background;
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:100;
+    cursor:pointer;
+   
+   }
+   .content{
+        height:25px;
+        width:50px;
+        border-radius: 50%;
+        
+        color:white;
+        font-weight: 600;
+       cursor:pointer
+   }
+   .black{
+    background-color:black;
+    border:1px solid black;
+}
+.red{
+    background-color:rgb(216, 18, 18);
+    border:1px solid rgb(216, 18, 18)
+}
+}

@@ -1,0 +1,92 @@
+.position-adjuster{
+position:absolute;
+}
+.bet-container{
+    box-sizing:border-box;
+    width:250px;
+   height:auto;
+    z-index:150;
+    background-color:white;
+    border:1px solid black;
+    border-radius:10px;
+    padding:10px;
+    input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+    .error{
+        color:red;
+        padding:5px;
+    }
+    .cancel-icon{
+        position:absolute;
+        right:0;
+        top:0;
+        font-size:1.5rem;
+        color:rgb(151, 31, 31);
+    }
+    .bet-type-container{
+        padding-inline:10px;
+        line-height: 1.75rem;
+        .bet-numbers{
+            display:flex
+        }
+        .betType{
+            text-transform: capitalize;
+        }
+        span{
+            font-weight:500;
+        }
+    }
+    .bet-button{
+        padding:5px;
+        width:2.5rem;
+        margin-left:5px;
+        background-color:white;
+        color:green;
+        border:1px solid green;
+        border-radius:5px;
+        &:hover{
+            background-color:green;
+            color:white;
+        }
+    }
+   .input-error{
+    box-sizing: border-box;
+        width:75%;
+        margin-block:10px;
+        padding:5px 10px;
+
+    &:focus{
+        border:1px red sold;
+        outline:none;
+    }
+   }
+    .bet-input {
+        box-sizing: border-box;
+        width:75%;
+        margin-block:10px;
+        padding:5px 10px;
+    
+        &:focus{
+            outline:none;
+          border-radius:5px;
+        border:1px solid green;
+        }
+    }
+    li{
+        list-style:none;
+        margin-inline:4px;
+        &::after{
+            content:","
+        }
+        
+        &:last-of-type::after{
+        display:none;
+        }
+        &:first-child::after{
+            display:none;
+        }
+    }
+}

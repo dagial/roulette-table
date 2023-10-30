@@ -1,0 +1,1 @@
+export const streetOddSelector=(state)=>state.street.odd

@@ -1,0 +1,37 @@
+@import "../variables.scss";
+.other-box-container{
+    position:relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:$box_width;
+    height:$box_height;
+    .left-border{
+        position: absolute;
+        height:$box_height;
+        width:$border_width;
+        top:0;
+        left:0;
+        background-color:$border_background;
+        cursor:crosshair;
+
+    }
+    .content{
+        height:25px;
+        width:50px;
+        border-radius: 50%;
+      
+        color:white;
+        cursor:pointer;
+        font-weight: 600;
+
+    }
+    .black{
+        background-color:black;
+        border:1px solid black;
+    }
+    .red{
+        background-color:rgb(216, 18, 18);
+        border:1px solid rgb(216, 18, 18);
+    }
+}

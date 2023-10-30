@@ -1,0 +1,48 @@
+.App{
+    background-color: rgb(46, 95, 46);
+    display:grid;
+    position:relative;
+    grid-template-columns: fit-content(10%);
+    grid-template-rows: fit-content(10%);
+    padding:20px;
+   
+
+    .roulette-wheel-container{
+        grid-row:1/5;
+        grid-column:5/10;
+        position:relative;
+        left:-50%;
+    }
+    .bet-table-container{
+        grid-row:5/10;
+        grid-column:1/5;
+        
+    }
+    .data-display{
+        display:grid;
+        grid-template-columns: 400px 450px;
+        grid-row:1/5;
+        grid-column:1/5;
+        .button{
+                width:80px;
+                padding:8px 10px;
+                background-color:inherit;
+                font-size:1rem;
+                color:white;
+                border:2px white solid;
+                border-radius:10px;
+            &:hover{
+                background-color:#FCFCFC;
+                color:rgb(23, 88, 23);
+                border-color:rgb(182, 196, 182);
+                font-weight: 600;
+            }
+        }
+    }
+    .bet-buttons{
+        grid-row:8/5;
+        grid-column:8/5;
+        margin-left:10px;
+    }
+
+}

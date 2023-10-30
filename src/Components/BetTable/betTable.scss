@@ -1,0 +1,27 @@
+@import "../variables.scss";
+.bet-table-container{
+    display:flex;
+    flex-direction:column;
+    .closer-div{
+        position:relative;
+        top:$border_width;
+        left:calc($box_width + $border_width);
+        width:calc($box_width*13 + $border_width + 4px );
+        height:$border_width;
+        background: $border_background;
+    }
+    .top-bet-table{
+        display:flex;
+        flex-direction:row-reverse;
+        justify-content: flex-end;
+        }
+    .bottom-bet-table{
+        position:relative;
+        left:$box_width;
+
+    }
+
+}
+.opt{
+    opacity:.6;
+}

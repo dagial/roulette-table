@@ -1,0 +1,41 @@
+@import "../variables.scss";
+
+.leftline-container{
+    
+    display:flex;
+    flex-direction:column;
+    .leftline-item{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing:border-box;
+        width:$box_width;
+        height:$box-height;
+        border-left:$border_width solid $border_background;
+        padding:3px;
+        &:first-child{
+            border-top:$border_width solid $border_background;
+   
+        }
+        &:nth-child(2){
+            border-block:$border_width solid $border_background; ;
+        }
+        &:last-child{
+            border-bottom:$border_width solid $border_background;
+        }
+        .leftline-content{
+            box-sizing:border-box;
+            border:2px solid white;
+            background-color: inherit;
+            padding:5px;
+            transform:rotate(90deg);
+            border-radius:20px;
+            color:white;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+    }
+
+
+}
