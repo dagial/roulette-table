@@ -31,6 +31,9 @@
         left:0;
         background-color:$border_background;
         cursor:grab;
+        &:last-of-type{
+            cursor:default
+        }
     }
    .b-l-corner{
     width:$corner_diameter;
