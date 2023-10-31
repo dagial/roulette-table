@@ -45,7 +45,7 @@ const BetWheel= ({wheelProps,setWinnerShow}) => {
         innerBorderWidth={5}
         outerBorderColor='#EEFF00'
         outerBorderWidth={8}
-        textDistance={85}
+        textDistance={80}
         radiusLineColor='white'
         radiusLineWidth={0}
         startingOptionIndex={0}

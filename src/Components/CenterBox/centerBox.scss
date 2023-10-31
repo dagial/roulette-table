@@ -14,7 +14,7 @@
         left:0;
         height:$border_width;
         background-color: $border_background;
-        cursor:crosshair;
+        cursor:grab;
     }
     .bottom-border{
         position:absolute;
@@ -22,7 +22,7 @@
         bottom:0;
         height:$border_width;
         background-color:$border_background;
-        cursor:crosshair;
+        cursor:grab;
     }
     .left-border{
         position:absolute;
@@ -30,7 +30,7 @@
         width:$border_width;
         left:0;
         background-color:$border_background;
-        cursor:crosshair;
+        cursor:grab;
     }
    .b-l-corner{
     width:$corner_diameter;
@@ -56,7 +56,7 @@
     left:0;
     z-index:100;
     cursor:pointer;
-   
+    transform:translate(-20%,-30%)
    }
    .content{
         width:60px;

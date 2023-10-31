@@ -12,7 +12,7 @@
         width:$box_width;
         height:$border_width;
         background-color:$border_background;
-        cursor: crosshair;
+        cursor: grab;
     }
     .row-db-corner{
         position:absolute;
@@ -21,8 +21,7 @@
         height:$corner_diameter;
         border-radius:50%;
         background-color:$corner_background;
-        &:hover{
-            cursor:pointer;
-        }
+        transform:translate(-40%,-20%);
+        cursor:pointer
     }
 }

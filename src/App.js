@@ -52,7 +52,7 @@ const App = () => {
       
       </div>
       <div className="bet-table-container">
-      <BetTable startBetting={true}/>
+      <BetTable startBetting={startBetting}/>
       </div>
       <div className="bet-buttons">
       <div className="bet-list-container">

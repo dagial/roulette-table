@@ -46,10 +46,11 @@ const OtherBox = ({item,index,side,last,setBetOptions,toggleDisplay}) => {
     <>
    
     <div className="other-box-container">
-      
-      <button className={colorClass(item)} onClick={onCenterClick} value={item}>
+      <div className={colorClass(item)} >
+      <button className="btn" onClick={onCenterClick} value={item}>
       {item}
       </button>
+      </div>
     <div className="left-border" onClick={onLeftClick}>
     </div>
     </div>

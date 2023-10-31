@@ -20,7 +20,7 @@
             height:5px;
             width:calc($box_width*1.2);
             background-color: $border_background;
-            cursor:crosshair;
+            cursor:grab;
         }
         .top-line-corner{
             position:absolute;
@@ -101,7 +101,7 @@
             height:$box_height;
             width:$border_width;
             background-color: $border_background;
-            cursor:crosshair;
+            cursor:grab;
         }
         // .top-line-corner{
         //     width:$corner_diameter;
@@ -114,7 +114,7 @@
             height:calc($box_height*0.4);
             width:$border_width;
             background-color:$border_background;
-            cursor:crosshair;
+            cursor:grab;
             
         }
     }

@@ -13,15 +13,23 @@
         top:0;
         left:0;
         background-color:$border_background;
-        cursor:crosshair;
+        cursor:grab;
 
     }
     .content{
         height:60px;
         width:60px;
-        color:white;
-        cursor:pointer;
-        font-weight: 600;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+       
+        .btn{
+            border:none;
+            background:inherit;
+            cursor:pointer;
+            color:white;
+            font-weight: 600;
+        }
 
     }
     .black{
