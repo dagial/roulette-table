@@ -1,0 +1,65 @@
+.front-container{
+    position:relative;
+    width:100vw;
+    height:90vh;
+    background-image:url("./csionRoulette.jpg");
+    justify-content:space-evenly;
+    display:flex;
+  
+    &::before{
+
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color:rgb(17,24,39,0.8);
+      
+    
+    }
+  
+    .front-header{
+        color:white;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        z-index:3;
+        font-size:3rem;
+        font-weight:600;
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        .small{
+            font-weight: 400;
+            font-size:.9rem;
+        }
+        .nav-btn{
+            width:120px;
+            padding:10px; 
+            font-size:1.1rem;
+            align-self: self-end;
+            background-color: #FBBE24;
+            color:black;
+            border:1px solid transparent;
+            border-radius:20px;
+        }
+    
+    }
+    .rules-roulette{
+        border:1px solid white;
+        width:400px;
+        padding:10px;
+        
+        z-index:3;
+        color:white;
+        .rule-items{
+
+        }
+
+    }
+
+}

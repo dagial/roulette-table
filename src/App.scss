@@ -1,11 +1,15 @@
 .App{
-    background:#04003B;
+
     font-family: "Raleway";
-    padding:20px;
-   .border{
+    display:flex;
+    flex-direction: column;
+    background:#1F2937;
+    z-index:-1;
+
+
     .app-table{
-        background-color: #1F2937;
-        border-radius:50px;
+
+        background-color: #111827;
         display:grid;
         position:relative;
         grid-template-columns: fit-content(10%);
@@ -21,7 +25,7 @@
         
         }
         .bet-table-container{
-            grid-row:4/9;
+            grid-row:5/9;
             grid-column:1/4;
             
         }
@@ -58,6 +62,13 @@
             
         }
     }
-   
-}
+   .space-between{
+
+    width:70%;
+    height:1px;
+    background: yellow;
+    align-self:center;
+    justify-self:center;
+    margin-block:20px;
+   }
 }

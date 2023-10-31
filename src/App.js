@@ -8,6 +8,7 @@ import BetCountDown from './Components/CountDown/countDown';
 import { useState} from 'react';
 import { useDispatch } from 'react-redux';
 import { reset } from './util';
+import Front from './Components/Front/front';
 
 const App = () => {
   const dispatch=useDispatch()
@@ -19,7 +20,8 @@ const App = () => {
 
   return (
     <div className="App" id="app">
-      <div className="border">
+    <Front/>
+    <div className="space-between"></div>
       <div className="app-table">
       <div className="roulette-wheel-container">
       <BetWheel wheelProps={wheelProps}  setWinnerShow={setWinnerShow}/>
@@ -51,14 +53,13 @@ const App = () => {
       </div>
       
       </div>
-      <div className="bet-table-container">
+      <div className="bet-table-container" id="table">
       <BetTable startBetting={startBetting}/>
       </div>
       <div className="bet-buttons">
       <div className="bet-list-container">
         <BetList startBetting={startBetting}/>
         </div>
-      </div>
       </div>
       </div>
     </div>
