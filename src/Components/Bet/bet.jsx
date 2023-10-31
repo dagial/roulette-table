@@ -82,9 +82,9 @@ const Bet = ({options:{xy,toggleDisplay,list,dispatcher,betType,odd}}) => {
         </div>
         
         
-        <input type="number" className="bet-input" placeholder='place your bet in birr' value={betMoney} onChange={onBetChange}/>
+        <input type="number" className={error && "input-error"} placeholder='place your bet in birr' value={betMoney} onChange={onBetChange}/>
         <span><button type="button" className="bet-button" onClick={onBetClicked}>Bet</button></span>
-{error &&    <small className="error">bets greater than 10birr and less 5000birr allowed</small>}
+{error &&    <small className="error">Err: bets greater than 10birr and less 5000birr are only allowed</small>}
 
     </div>
     </div>

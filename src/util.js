@@ -111,42 +111,45 @@ export const switchMatch=(number,string)=>{
 }
 
 export const rouletteColor=(number)=>{
+    const textColor="#DFDFDF"
+    const red="#7F1D1D"
+    const black="black"
 
     if(number>=1 && number<=10 ){
         if (number%2==0){
           
-            return {option:number.toString(),style:{backgroundColor:"black",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:black,textColor:textColor}}
         }
         else{
-            return {option:number.toString(),style:{backgroundColor:"red",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:red,textColor:textColor}}
         }
     }
     else if (number>=19 && number <=28){
         if (number%2==0){
       
-            return {option:number.toString(),style:{backgroundColor:"black",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:black,textColor:textColor}}
         }
         else{
-            return {option:number.toString(),style:{backgroundColor:"red",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:red,textColor:textColor}}
         }
 
     }
     else if (number>=11 && number<=18 ){
 
         if (number%2==0){
-            return {option:number.toString(),style:{backgroundColor:"red",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:red,textColor:textColor}}
         }
         else{
-            return {option:number.toString(),style:{backgroundColor:"black",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:black,textColor:textColor}}
         }
 
     }
     else if(number>=29 && number <=36){
         if (number%2==0){
-            return {option:number.toString(),style:{backgroundColor:"red",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:red,textColor:textColor}}
         }
         else{
-            return {option:number.toString(),style:{backgroundColor:"black",textColor:'white'}}
+            return {option:number.toString(),style:{backgroundColor:black,textColor:textColor}}
         }
 
     }

@@ -59,20 +59,31 @@
    
    }
    .content{
-        height:25px;
-        width:50px;
-        border-radius: 50%;
-        
-        color:white;
+        width:60px;
+        height:50px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        background: inherit;
+    
+       
+
+       .btn{
+        background:inherit;
+        cursor:pointer;
         font-weight: 600;
-       cursor:pointer
+
+        border:none;
+        color:white;
+
+       }
    }
    .black{
     background-color:black;
     border:1px solid black;
 }
 .red{
-    background-color:rgb(216, 18, 18);
-    border:1px solid rgb(216, 18, 18)
+    background-color:#7F1D1D;
+    border:1px solid #7F1D1D
 }
 }

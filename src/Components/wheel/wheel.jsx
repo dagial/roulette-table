@@ -16,7 +16,7 @@ const data=ary.map((item)=>{
         return {
             option:item,
             style: {
-                "backgroundColor": "#00FF19",
+                "backgroundColor": "#055E45",
                 "textColor": "white"
             }
             
@@ -30,29 +30,32 @@ const BetWheel= ({wheelProps,setWinnerShow}) => {
     const {startSpin,prizeNum}=wheelProps
     const prize=ary.indexOf(prizeNum.toString())
     return(
-        <>
+        <div className="wheel-design">
+            <div className="center-border"></div>
+            <div className="wheel-container">
           <Wheel 
-  mustStartSpinning={startSpin}
-  spinDuration={2}
-  prizeNumber={prize}
-  data={data}
-  backgroundColors={["#3e3e3e","#df3428"]}
-  textColors={["#ffffff"]}
-
-        innerRadius={4}
-        innerBorderColor='#F0CEA0'
-        innerBorderWidth={80}
-  textDistance={80}
-  outerBorderColor='white'
-
-  radiusLineColor='white'
-  radiusLineWidth={0}
-  startingOptionIndex={0}
-  onStopSpinning={()=>{
+        mustStartSpinning={startSpin}
+        spinDuration={2}
+        prizeNumber={prize}
+        data={data}
+        backgroundColors={["#3e3e3e","#df3428"]}
+         textColors={["#DFDFDF"]}
+        innerRadius={50}
+        innerBorderColor='#808080'
+        innerBorderWidth={5}
+        outerBorderColor='#EEFF00'
+        outerBorderWidth={8}
+        textDistance={85}
+        radiusLineColor='white'
+        radiusLineWidth={0}
+        startingOptionIndex={0}
+        onStopSpinning={()=>{
     setWinnerShow(true)
   }}
   />
-  </>
+  </div>
+
+  </div>
     )
   
 }

@@ -9,6 +9,7 @@
         width:calc($box_width*13 + $border_width + 4px );
         height:$border_width;
         background: $border_background;
+        z-index:99;
     }
     .top-bet-table{
         display:flex;

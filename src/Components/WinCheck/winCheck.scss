@@ -1,7 +1,7 @@
 .win-list{
     display:flex;
     flex-direction: column;
-    .looser{
+    .bets-loose{
         display:flex;
         width:250px;
         padding:20px 20px;
@@ -9,17 +9,24 @@
         justify-content: center;
         background-color:#F1F0EA;
         align-items: center;
-        font-size:1.2rem;
-        margin-bottom:8px;
         border-radius:10px;
-
-        &::after{
-            content:'';
-            height:1px;
-            width:70%;
-            background-color: rgb(204, 197, 197);
+        font-size:1rem;
+        margin-bottom:8px;
+       
+        .looser{
+            font-size:1.2rem;
+            margin-block:8px;
+       
+            &::before{
+                display:block;
+                content:'';
+                height:1px;
+                width:110%;
+                background-color: rgb(204, 197, 197);
+            }
         }
     }
+    
     .total-winnings{
         display:flex;
         align-items: center;
@@ -28,6 +35,8 @@
         padding:10px 5px;
         align-self: end;
         margin-top:5px;
+        color:yellow;
+        font-size:1.3rem;
        
         &::before{
             display:block;
@@ -35,6 +44,7 @@
             height:1px;
             width:120%;
             background-color: rgb(204, 197, 197);
+            margin-bottom:2px;
         }
     }
 }

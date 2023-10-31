@@ -71,9 +71,11 @@ const CenterBox = ({row,index, last ,setBetOptions,toggleDisplay}) => {
         </div>
         <div className="bottom-border" onClick={onBottomClick} >
         </div>
-        <button className={colorClass(center)} onClick={onCenterClick} value={center}>
+        <div className={colorClass(center)}>
+        <button className="btn"onClick={onCenterClick} value={center}>
             {center}
         </button>
+        </div>
         <div className="left-border" onClick={onLeftClick}>
         </div>
         {!last && <><div className="b-l-corner" onClick={onBottomCornerClick}></div>

@@ -183,7 +183,7 @@ const WinList=({prizeNumber})=>{
           Total:  {totalWinnings()}$
         </div>
         </div>
-        :<div className="looser">Sorry You Lost!!&#128557;&#128557;&#128540;</div>
+        :<div className="bets-loose">Winning Number : {prizeNumber}<div className="looser">Sorry You Lost!!&#128557;&#128557;&#128540;</div></div>
     
     }
        
