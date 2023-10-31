@@ -6,8 +6,9 @@
     background-color: inherit;
     border-radius:15px;
     width:350px;
-    height:250px;
+    max-height:250px;
     overflow-y:auto;
+    overflow-x:hidden;
     padding:5px;
     border:1px solid white;
     margin-top:10px;
@@ -60,7 +61,7 @@
             box-sizing: border-box;
             padding-left:10px;
             display:grid;
-            grid-template-columns: 200px 100px 50px;
+            grid-template-columns: 200px 80px 50px;
             margin-bottom:4px;
             margin-left:4px;
             color:white;

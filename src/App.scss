@@ -12,12 +12,6 @@
         grid-template-rows: fit-content(10%);
         border:1px solid #B97241;
         padding:20px;
-        // border-radius:60px;
-        // border-style:solid;
-        // border-width: 20px;
-        // border-image-source: url("./download\ \(2\).jpg");
-        // border-image-slice:20;
-        // border-radius:30px;
    
         .roulette-wheel-container{
             grid-row:1/5;
@@ -56,6 +50,12 @@
             grid-row:6/8;
             grid-column:4/8;
             margin-left:10px;
+            display:flex;
+            flex-direction: column;
+            align-items: initial;
+            justify-content: initial;
+
+            
         }
     }
    
